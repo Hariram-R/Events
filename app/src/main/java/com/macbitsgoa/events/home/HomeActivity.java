@@ -15,6 +15,7 @@ import com.macbitsgoa.events.SocialActivity;
 import com.macbitsgoa.events.aboutfest.AboutEventActivity;
 import com.macbitsgoa.events.aboutmac.AboutMacActivity;
 import com.macbitsgoa.events.eateries.EateriesCardFragment;
+import com.macbitsgoa.events.feed.FeedCardFragment;
 import com.macbitsgoa.events.speakers.SpeakersActivity;
 import com.macbitsgoa.events.speakers.SpeakersFragment;
 import com.macbitsgoa.events.sponsors.SponsorsFragment;
@@ -100,12 +101,12 @@ public class HomeActivity extends AppCompatActivity implements
 
 
 
-        /*if (BuildConfig.feed) {
+        if (BuildConfig.feed) {
             fragmentTransaction.add(R.id.ll_home,
                     new FeedCardFragment(),
                     "feed"
             );
-        }*/
+        }
 
         if (BuildConfig.festmerch){
             fragmentTransaction.add(R.id.ll_home,
@@ -125,11 +126,11 @@ public class HomeActivity extends AppCompatActivity implements
                     getString(R.string.timeline)
             );
         }
-        /*if (BuildConfig.shouldShowMapOnHome) {
+        if (BuildConfig.shouldShowMapOnHome) {
             fragmentTransaction.add(R.id.ll_home,
                     new MapCardFragment(),
                     "map");
-        }*/
+        }
 
         if (BuildConfig.sponsors){
             fragmentTransaction.add(R.id.ll_home,
